@@ -138,7 +138,7 @@ function artist(concert) {
         var datetime = response.data[i].datetime;
         var dt = [] = datetime.split("T");
         var date = [] = dt[0].split("-");
-        console.log(response.data[i].venue.city + " , " + response.data[i].venue.country + " at " + response.data[i].venue.name + " " + date[2] + "-" + date[1] + "-" + date[0]);
+        console.log(" [ "+i+" ] "+response.data[i].venue.city + " , " + response.data[i].venue.country + " at " + response.data[i].venue.name + " " + date[2] + "-" + date[1] + "-" + date[0]);
         // console.log(response.data[i].venue);
         // console.log(response.data[i].datetime);
       }
